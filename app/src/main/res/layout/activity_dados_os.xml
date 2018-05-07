@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dados do Registro de Atendimento"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RA: 12307022012  Conta: 863729-6
+Data da Solicitação: 27/12/2017 - 21ª Programação
+Serviço: 1312 - Recadastramento BCC
+
+Descrição: Sr. Eduardo 993113334 apresentou escritura do imóvel, Cartório Francisco Taveira 4ª Região de Goiânia e documentos pessoais, solicita alteração de titularidade." />
+
+    <Button
+        android:id="@+id/btnFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Boletim de Cadastro Comercial" />
+
+    <Button
+        android:id="@+id/btnEvidencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Colher Evidências" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encerrar Atendimento" />
+
+</LinearLayout>
