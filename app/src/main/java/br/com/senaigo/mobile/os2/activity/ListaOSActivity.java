@@ -1,7 +1,9 @@
 package br.com.senaigo.mobile.os2.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ import java.util.List;
 import br.com.senaigo.mobile.os2.R;
 import br.com.senaigo.mobile.os2.adapter.ExpandableListAdapter;
 
-public class ListaOS extends AppCompatActivity {
+public class ListaOSActivity extends AppCompatActivity {
 
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
@@ -23,21 +25,20 @@ public class ListaOS extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_os);
 
-        // get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
-        // preparing list data
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
 
-        // setting list adapter
         expListView.setAdapter(listAdapter);
     }
 
-    /*
-     * Preparing the list data
-     */
+    protected void exibirOS(View view) {
+        Intent intent = new Intent(ListaOSActivity.this, DadosOSActivity.class);
+        startActivity(intent);
+    }
+
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();

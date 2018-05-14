@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import br.com.senaigo.mobile.os2.R;
 
-public class DadosOS extends AppCompatActivity {
+public class DadosOSActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
