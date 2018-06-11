@@ -12,6 +12,7 @@
         android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
         android:paddingTop="5dp"
         android:textSize="17dp"
+        android:textColor="#fff"
         android:onClick="exibirOS"/>
 
 </LinearLayout>
